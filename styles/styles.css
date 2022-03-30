@@ -84,7 +84,6 @@ h1{
      margin-left: 0;
      padding-right: 0;
      list-style-type: none;
-     list-style-position: outside;
 }
 #sec2 article ol li{
      counter-increment: step-counter;
@@ -158,13 +157,57 @@ h1{
      padding: 15px 30px;
 }
 #sec4 div button:hover{
-     background-color: rgb(255, 54, 4);
+     background-color: rgb(255, 0, 0);
      color: white
 }
 footer{
      background-color: #1E1E26;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-evenly;
      color: white;
-     padding: 120px 0;
+     height: 300px;
+}
+.col{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     padding: 70px 0;
+}
+.fil{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+}
+.fil a:hover svg path{
+     fill: rgb(242, 95, 58);
+}
+.footList{
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 100%;
+}
+.footList li a{
+     text-decoration: none;
+     color: white;
+}
+.footList li a:hover{
+     color: rgb(242, 95, 58);
+}
+#mail{
+     background-color: white;
+     border: 0;
+     border-radius: 50px;
+     color: black;
+     padding: 15px 30px;
+}
+#boton{
+     box-shadow: none;
+}
+footer div div p{
+     color: rgb(143, 148, 167);
 }
