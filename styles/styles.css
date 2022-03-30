@@ -1,0 +1,170 @@
+*{
+     font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+     background: url(/img/bg-tablet-pattern.svg) no-repeat 110% -10%, url(/img/bg-tablet-pattern.svg) no-repeat -45% 65%;
+     margin: 0;
+}
+header{
+     align-items: center;
+     display: flex;
+     justify-content: space-around;
+     padding: 50px 0 100px 0;
+}
+header img{
+     cursor: pointer;
+}
+header nav{
+     width: 40%;
+}
+header nav ul{
+     display: flex;
+     list-style-type: none;
+     padding: 0;
+     justify-content: space-around;
+}
+header nav ul li a{
+     text-decoration: none;
+     cursor: pointer;
+     color:  rgb(35, 44, 81);
+     font-weight: 700;
+     font-size: 16px;
+}
+header nav ul li a:hover{
+     color: rgb(143, 148, 167)
+}
+.GetStarted{
+     background-color: rgb(242, 95, 58);
+     border: 0;
+     border-radius: 50px;
+     color: white;
+     cursor: pointer;
+     padding: 15px 30px;
+     box-shadow: 0 12px 15px 1px rgb(252, 198, 198);
+}
+.GetStarted:hover{
+     background-color: rgb(255, 134, 97);
+}
+main section{
+     display: flex;
+     padding-bottom: 100px;
+}
+#sec1{
+     justify-content: space-evenly;
+     align-items: center;
+}
+.mainArt{
+     width: 30%;
+}
+h1{
+     font-size: 55px;
+     margin: 0;
+     font-weight: bold;
+     color: rgb(35, 44, 81);
+}
+#schemAnalytics{
+     width: 100%;
+}
+#sec2{
+     justify-content: space-evenly;
+     align-items: flex-start;
+}
+.arTitle{
+     margin-top: 0;
+     color: rgb(35, 44, 81);
+     font-size: 40px;
+}
+.parrafo{
+     color: rgb(143, 148, 167);
+     width: 75%;
+     margin: 25px 0;
+     line-height: 30px;
+}
+#sec2 article ol{
+     margin-left: 0;
+     padding-right: 0;
+     list-style-type: none;
+     list-style-position: outside;
+}
+#sec2 article ol li{
+     counter-increment: step-counter;
+     position: relative;
+}
+#sec2 article ol li::before{
+     content: "0" counter(step-counter);
+     background-color: rgb(242, 95, 58);
+     border: 0;
+     border-radius: 25px;
+     color: white;
+     padding: 10px 25px;
+     position: absolute;
+     left: -110px;
+     top: -10px;
+}
+#sec2 article ol li p{
+     padding-left: 50px;
+}
+.parrafoR{
+     color: rgb(143, 148, 167);
+     width: 85%;
+     line-height: 30px;
+}
+.lisTitle{
+     font-weight: bold;
+     font-size: 20px;
+     color: rgb(35, 44, 81);
+}
+#sec3{
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 250px;
+}
+#sec3 article{
+     display: flex;
+     margin: 50px 0;   
+}
+#sec3 article div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.profPick{
+     width: 80px;
+}
+#sec3 article div p.parrafo{
+     text-align: center;
+}
+#sec4{
+     background-color: rgb(242, 95, 58);
+     padding-bottom: 0px;
+     height: 250px;
+     align-items: center;
+     justify-content: space-around;
+}
+#sec4 div{
+     display: flex;
+}
+#sec4 div h2{
+     width: 70%;
+     color: white;
+     font-size: 40px;
+}
+#sec4 div button{
+     background-color: white;
+     border: 0;
+     border-radius: 50px;
+     color: rgb(242, 95, 58);
+     cursor: pointer;
+     padding: 15px 30px;
+}
+#sec4 div button:hover{
+     background-color: rgb(255, 54, 4);
+     color: white
+}
+footer{
+     background-color: #1E1E26;
+     display: flex;
+     justify-content: space-around;
+     color: white;
+     padding: 120px 0;
+}
