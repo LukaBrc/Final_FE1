@@ -172,9 +172,6 @@ h1{
      background-color: rgb(255, 0, 0);
      color: white
 }
-#hidden{
-     display: none;
-}
 footer{
      background-color: #1E1E26;
      display: flex;
@@ -219,6 +216,12 @@ footer{
      border-radius: 50px;
      color: black;
      padding: 15px 30px;
+}
+#mail:invalid{
+     border: 4px solid crimson;
+}
+#mail:valid{
+     border: 4px solid green;
 }
 #boton{
      box-shadow: none;
