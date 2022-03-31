@@ -1,8 +1,11 @@
 *{
      font-family: 'Be Vietnam Pro', sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
 }
 body{
-     background: url(/img/bg-tablet-pattern.svg) no-repeat 110% -10%, url(/img/bg-tablet-pattern.svg) no-repeat -45% 65%;
+     background: url(../img/bg-tablet-pattern.svg) no-repeat 110% -10%, url(../img/bg-tablet-pattern.svg) no-repeat -45% 65%;
      margin: 0;
 }
 header{
@@ -28,7 +31,7 @@ header nav ul li a{
      cursor: pointer;
      color:  rgb(35, 44, 81);
      font-weight: 700;
-     font-size: 16px;
+     font-size: 1rem;
 }
 header nav ul li a:hover{
      color: rgb(143, 148, 167)
@@ -45,6 +48,9 @@ header nav ul li a:hover{
 .GetStarted:hover{
      background-color: rgb(255, 134, 97);
 }
+#icoMenu{
+     display: none;
+}
 main section{
      display: flex;
      padding-bottom: 100px;
@@ -57,7 +63,7 @@ main section{
      width: 30%;
 }
 h1{
-     font-size: 55px;
+     font-size: 3.5rem;
      margin: 0;
      font-weight: bold;
      color: rgb(35, 44, 81);
@@ -72,9 +78,9 @@ h1{
 .arTitle{
      margin-top: 0;
      color: rgb(35, 44, 81);
-     font-size: 40px;
+     font-size: 2.5rem;
 }
-.parrafo{
+.parrafoNormal{
      color: rgb(143, 148, 167);
      width: 75%;
      margin: 25px 0;
@@ -103,14 +109,14 @@ h1{
 #sec2 article ol li p{
      padding-left: 50px;
 }
-.parrafoR{
+.parrafoDerecha{
      color: rgb(143, 148, 167);
      width: 85%;
      line-height: 30px;
 }
 .lisTitle{
      font-weight: bold;
-     font-size: 20px;
+     font-size: 1.25rem;
      color: rgb(35, 44, 81);
 }
 #sec3{
@@ -130,10 +136,15 @@ h1{
 .profPick{
      width: 80px;
 }
-#sec3 article div p.parrafo{
+#sec3 article div p.parrafoNormal{
      text-align: center;
 }
+#carrousel{
+     display: none;
+}
 #sec4{
+     background: url(../img/bg-simplify-section-desktop.svg) 0 100% no-repeat;
+     margin: 0;
      background-color: rgb(242, 95, 58);
      padding-bottom: 0px;
      height: 250px;
@@ -146,7 +157,7 @@ h1{
 #sec4 div h2{
      width: 70%;
      color: white;
-     font-size: 40px;
+     font-size: 2.5rem;
 }
 #sec4 div button{
      background-color: white;
@@ -155,10 +166,14 @@ h1{
      color: rgb(242, 95, 58);
      cursor: pointer;
      padding: 15px 30px;
+     font-weight: bold;
 }
 #sec4 div button:hover{
      background-color: rgb(255, 0, 0);
      color: white
+}
+#hidden{
+     display: none;
 }
 footer{
      background-color: #1E1E26;
@@ -210,4 +225,252 @@ footer{
 }
 footer div div p{
      color: rgb(143, 148, 167);
+}
+@media (min-width: 3840px){
+     header img {
+          height: 5rem;
+     }
+     header nav ul li a {
+          font-size: 3rem;
+     }
+     .GetStarted{
+          font-size: 2rem;
+     }
+     h1{
+          font-size: 4.5rem;
+     }
+     p{
+          font-size: 2rem;
+     }
+     .arTitle{
+          font-size: 3.5rem;
+     }
+     .lisTitle{
+          font-size: 2.5rem;
+     }
+     .profPick{
+          width: 200px;  
+     }
+     h3{
+          font-size: 2rem;
+     }
+     #sec4 div h2{
+          font-size: 3.5rem;
+     }
+     #sec4 div button{
+          font-size: 2rem;
+     }
+     .col{
+          font-size: 1.5rem;
+     }
+     #mail{
+          font-size: 2rem;
+     }
+}
+@media (min-width: 2048px) and (max-width: 3839px){
+     header img {
+          height: 3rem;
+     }
+     header nav ul li a {
+          font-size: 1.5rem;
+     }
+     .GetStarted{
+          font-size: 1.5rem;
+     }
+     h1{
+          font-size: 4rem;
+     }
+     p.parrafoNormal{
+          font-size: 1.5rem;
+     }
+     p.parrafoDerecha{
+               font-size: 1.5rem;
+     }
+     .arTitle{
+          font-size: 3rem;
+     }
+     .lisTitle{
+          font-size: 2rem;
+     }
+     .profPick{
+          width: 150px;  
+     }
+     h3{
+          font-size: 2rem;
+     }
+     #sec4 div h2{
+          font-size: 3rem;
+     }
+     #sec4 div button{
+          font-size: 1.5rem;
+     }
+     .col{
+          font-size: 1.5rem;
+     }
+     #mail{
+          font-size: 1.5rem;
+     }
+}
+@media (max-width: 1440px){
+     header nav ul {
+          justify-content: space-between;
+     }
+     .mainArt{
+          width: 45%;
+     }
+     .arTitle{
+          padding-right: 3rem;
+     }
+     #sec2 article ol li::before {
+          left: -85px;
+     }
+}
+@media (max-width: 1080px){
+     header > nav {
+          width: 60%;
+     }
+     .arTitle{
+          padding-right: 4rem;
+     }
+}
+@media (max-width: 800px){
+     header nav{
+          display: flex;
+          justify-content: flex-end;
+     }
+     header nav ul{
+          display: none;
+     }
+     .GetStarted{
+          font-size: 1rem;
+          padding: 1rem 3rem;
+     }
+     header button{
+          display: none;
+     }
+     #icoMenu{
+          display: block;
+          cursor: pointer;
+     }
+     header img {
+          height: 2rem;
+     }
+     #sec1 {
+          flex-direction: column-reverse;
+          padding-bottom: 0;
+     }
+     .mainArt {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 100px;
+     }
+     h1{
+          text-align: center;
+     }
+     p.parrafoNormal{
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 1rem 0;
+     }
+     p.parrafoDerecha{
+          font-size: 1rem;
+          margin: 1rem 0;
+     }
+     #sec2{
+          flex-direction: column;
+          padding-bottom: 0;
+     }
+     .arTitle{
+          padding: 0;
+          text-align: center;
+          width: 80%;
+     }
+     #sec2 article ol {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     .lisTitle{
+          display: inline;
+          width: 85%;
+          background-color: rgba(255, 134, 97, 0.3);
+          padding: 0.5rem 0 0.5rem 2rem;
+          margin-left: 2rem;
+     }
+     #sec2 article ol li::before {
+     left: -50px;
+     top: -2px;
+     }
+     #sec2 article ol p{
+          padding-bottom: 3rem;
+          line-height: 2.5rem;
+     }
+     #sec3 article div#anisha{
+          display: none;
+     }
+     #sec3 article div#richard{
+          display: none;
+     }
+     .profPick {
+          width: 125px;
+     }
+     #sec3 article div#ali h3{
+          margin: 2rem 0;
+          font-size: 2rem;
+     }
+     #carrousel{
+          display: block;
+     }
+     .dot{
+          height: 0.7rem;
+          width: 0.7rem;
+          border: 2px solid;
+          border-color: rgb(242, 95, 58);
+          color: white;
+          border-radius: 50%;
+          display: inline-block;
+     }
+     .dot_active{
+          height: 0.7rem;
+          width: 0.7rem;
+          background-color: rgb(242, 95, 58);
+          border-radius: 50%;
+          display: inline-block;
+     }
+     #sec4 {
+          flex-direction: column;
+          height: auto;
+          padding: 7rem 0;
+     }
+     #sec4 div h2 {
+          font-size: 4rem;;
+          padding: 2rem 2rem 4rem 2rem;
+          width: 100%;
+          text-align: center;
+          font-weight: 500;
+     }
+     #sec4 div button{
+          font-weight: bold;
+          font-size: 1rem;
+          padding: 1rem 3rem;
+     }
+     footer{
+          height: auto;
+          flex-direction: column-reverse;
+     }
+     nav.col{
+          font-size: 1.5rem;
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 0;
+     }
+     #subMail{
+          padding-bottom: 2rem;
+     }
+     #redes{
+               padding-top: 2rem;
+     }
 }
